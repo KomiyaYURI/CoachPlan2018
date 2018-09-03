@@ -7,13 +7,15 @@ function collect_all_even(collection) {
   for( i in collection)
   {
     if (i % 2 ==0 && i != 0){
-      var ing;
-      ing = parseInt(i);
-      myArray.push(ing);
+
+      myArray.push(+i);
     }
 
+    //collection.filter
   }
   return myArray;
 }
 
 module.exports = collect_all_even;
+
+
