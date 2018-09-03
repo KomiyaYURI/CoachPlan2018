@@ -3,15 +3,11 @@
 function choose_even(collection) {
 
   //在这里写入代码
-  var reArray;
-  collection.forEach(function (temp) {
-    if (temp % 2 == 0) {
-      reArray.push(temp);
-    console.log(temp);
-    }
-
+  var r = collection.filter(function (x) {
+    return x % 2 == 0;
   });
-  return reArray;
+
+  return r;
 }
 
 module.exports = choose_even;
