@@ -6,14 +6,13 @@ function grouping_count(collection) {
   var res = {}
 
   // for (var c in collection) {
-  for (var i = 0; i < collection.length; i++) {
-    var c = collection[i];
+  collection.forEach(c => {
 
     if (!res[c])
       res[c] = 1;
     else
       res[c] += 1;
-  }
+  })
 
   return res;
 }
