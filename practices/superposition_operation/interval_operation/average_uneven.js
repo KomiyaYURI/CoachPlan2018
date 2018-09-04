@@ -1,8 +1,8 @@
 'use strict';
 
 function average_uneven(collection) {
-
-  //在这里写入代码
+  let array = collection.filter(i=>i%2==1);
+  return array.reduce((x,y)=>x+y)/array.length;
 }
 
 module.exports = average_uneven;
